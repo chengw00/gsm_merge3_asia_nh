@@ -1,0 +1,11 @@
+1) 3 simulataneous download of grib files
+
+2) 3 simulataneous of conversion of grib files
+   - check file size 
+
+3) merge files and move to holding area
+
+4) copy from previous cycle to holding area
+
+5) cleanup (crontab)
+

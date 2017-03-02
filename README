@@ -1,0 +1,16 @@
+Change top level directory in "/raid1/chengw" to your directory.
+
+keep gsm3_rt, just change /raid1/chengw
+
+1) set HOME = /raid1/chengw/gsm3_rt
+   in "code/master_concat_bin.csh"
+
+2) set HOME = /raid1/chengw/gsm3_rt
+   in "code/master_unpack_jma-gsm.csh"
+
+3) set PATH = /raid1/chengw/gsm3_rt
+   in "clean_gsm3_raw.csh"
+
+4) global replace "/raid1/chengw" to your directory in crontab.gsm
+   This is the crontab to use for download
+

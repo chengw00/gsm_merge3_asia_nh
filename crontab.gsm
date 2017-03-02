@@ -1,0 +1,25 @@
+00  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec1/master_download_jma_sec1.csh /raid1/chengw/gsm3_rt/download_sec1 stop >& /dev/null
+05  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec1/master_download_jma_sec1.csh /raid1/chengw/gsm3_rt/download_sec1 start >& /dev/null
+#30  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec1/master_jma-gsm_sec1.csh >& /dev/null
+45  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec1/master_download_jma_sec1.csh /raid1/chengw/gsm3_rt/download_sec1 restart >& /dev/null
+12  05,11,17,23 * * * /raid1/chengw/gsm3_rt/download_sec1/master_download_jma_sec1.csh /raid1/chengw/gsm3_rt/download_sec1 stop >& /dev/null
+
+
+00  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec2/master_download_jma_sec2.csh /raid1/chengw/gsm3_rt/download_sec2 stop >& /dev/null
+05  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec2/master_download_jma_sec2.csh /raid1/chengw/gsm3_rt/download_sec2 start >& /dev/null
+#30  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec2/master_jma-gsm_sec2.csh >& /dev/null
+45  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec2/master_download_jma_sec2.csh /raid1/chengw/gsm3_rt/download_sec2 restart >& /dev/null
+12  05,11,17,23 * * * /raid1/chengw/gsm3_rt/download_sec2/master_download_jma_sec2.csh /raid1/chengw/gsm3_rt/download_sec2 stop >& /dev/null
+
+
+00  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec3/master_download_jma_sec3.csh /raid1/chengw/gsm3_rt/download_sec3 stop >& /dev/null
+05  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec3/master_download_jma_sec3.csh /raid1/chengw/gsm3_rt/download_sec3 start >& /dev/null
+#30  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec3/master_jma-gsm_sec3.csh >& /dev/null
+45  04,10,16,22 * * * /raid1/chengw/gsm3_rt/download_sec3/master_download_jma_sec3.csh /raid1/chengw/gsm3_rt/download_sec3 restart >& /dev/null
+12  05,11,17,23 * * * /raid1/chengw/gsm3_rt/download_sec3/master_download_jma_sec3.csh /raid1/chengw/gsm3_rt/download_sec3 stop >& /dev/null
+
+15 05,11,17,23 * * * /raid1/chengw/gsm3_rt/code/master_unpack_jma-gsm.csh >& /raid1/chengw/gsm3_rt/master_unpack_jma-gsm.log
+35 05,11,17,23 * * * /raid1/chengw/gsm3_rt/code/master_concat_bin.csh >& /raid1/chengw/gsm3_rt/code/master_concat_bin.log
+
+00  08,20 * * *  /raid1/chengw/gsm3_rt/clean_gsm3_raw.csh >& /raid1/chengw/gsm3_rt/clean_gsm3_raw.log 
+
